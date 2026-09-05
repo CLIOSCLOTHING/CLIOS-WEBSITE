@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLIOS — Nothing Ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#">CLIOS<span>®</span></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#story">Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="bag" id="bagBtn">Bag <span id="count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CLIOS / 001</p>
+        <h1>NOTHING<br><em>ORDINARY.</em></h1>
+        <p class="sub">Independent streetwear built around clean silhouettes, strong details and a mindset that doesn't follow.</p>
+        <a class="button" href="#shop">Explore drop <span>↗</span></a>
+      </div>
+      <div class="hero-mark">
+        <div class="monogram">C</div>
+        <p>EST. 2026</p>
+      </div>
+    </section>
+
+    <section class="ticker"><div>CLIOS — NEW STANDARD — CLIOS — NEW STANDARD — CLIOS — NEW STANDARD —</div></section>
+
+    <section id="shop" class="shop section">
+      <div class="section-head">
+        <div><p class="eyebrow">DROP 001</p><h2>THE FIRST DROP</h2></div>
+        <span>03 / 03</span>
+      </div>
+      <div class="products">
+        <article class="product">
+          <div class="product-img hoodie"><span>CLIOS</span></div>
+          <div class="product-info"><div><h3>Core Hoodie</h3><p>Heavyweight / Black</p></div><strong>£70</strong></div>
+          <button class="add" data-name="Core Hoodie" data-price="70">Add to bag</button>
+        </article>
+        <article class="product">
+          <div class="product-img tee"><span>CLIOS</span></div>
+          <div class="product-info"><div><h3>Monogram Tee</h3><p>Premium cotton / White</p></div><strong>£40</strong></div>
+          <button class="add" data-name="Monogram Tee" data-price="40">Add to bag</button>
+        </article>
+        <article class="product">
+          <div class="product-img cap"><span>C</span></div>
+          <div class="product-info"><div><h3>CLIOS Cap</h3><p>Structured / Black</p></div><strong>£30</strong></div>
+          <button class="add" data-name="CLIOS Cap" data-price="30">Add to bag</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="story" class="manifesto section">
+      <p class="eyebrow">THE CLIOS MINDSET</p>
+      <h2>WE DON'T MAKE CLOTHES<br>FOR EVERYONE.</h2>
+      <p>CLIOS is a new independent label built on confidence, restraint and individuality. No unnecessary noise. Just pieces designed to become part of your uniform.</p>
+    </section>
+
+    <section class="feature section">
+      <div class="feature-box"><span>01</span><h3>QUALITY<br>FIRST</h3><p>Considered materials and heavyweight construction.</p></div>
+      <div class="feature-box"><span>02</span><h3>SHARP<br>IDENTITY</h3><p>A visual language made to stand out without shouting.</p></div>
+      <div class="feature-box"><span>03</span><h3>LIMITED<br>DROPS</h3><p>Small releases. No endless restocks.</p></div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <p class="eyebrow">STAY CLOSE</p>
+      <h2>GET THE NEXT<br>DROP FIRST.</h2>
+      <form id="signup">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join ↗</button>
+      </form>
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">CLIOS<span>®</span></div>
+    <p>© 2026 CLIOS. All rights reserved.</p>
+    <div><a href="#">Instagram</a><a href="#">TikTok</a></div>
+  </footer>
+
+  <div class="cart" id="cart">
+    <div class="cart-head"><h2>Your bag</h2><button id="close">×</button></div>
+    <div id="items"></div>
+    <div class="cart-total"><span>Total</span><strong id="total">£0</strong></div>
+    <button class="checkout" id="checkout">Checkout</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
